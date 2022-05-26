@@ -38,8 +38,10 @@ def create_titles(film_number, series_number):
         titles_list.append(series)    
     return titles_list
 
-for item in create_titles(2, 3):
-    print(item.show_film())
-    print(item.show_series())
+titles = create_titles(2, 3)
+for film in titles:
+    print(film.show_film())
+for series in titles:
+    print(series.show_series())
 
 
