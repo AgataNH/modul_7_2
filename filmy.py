@@ -40,8 +40,8 @@ def create_titles(film_number, series_number):
 
 titles = create_titles(2, 3)
 for element in titles:
-    if isinstance(element, Films):
-        print(element.show_film())
-    elif isinstance(element, Series):
+    if isinstance(element, Series):
         print(element.show_series())
+    elif isinstance(element, Films):
+        print(element.show_film())
 
